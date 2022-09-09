@@ -7,28 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blackjack</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
 </head>
 
 <body>
+    <script defer src="script.js"></script>
     <div class="container">
         <h1>Black<span id="red-title">Jack</span></h1>
         <div id="blackjack-result">
             <p>Boas Vindas ao Jogo</p>
-            <div class="flex-blackjack-row-1">
-                <table id="table-label">
-                    <tr>
-                        <th id="win-header">Vitórias</th>
-                        <th id="loss-header">Derrotas</th>
-                        <th id="draw-header">Empates</th>
-                    </tr>
-                    <tr>
-                        <td><span id="wins">0</span></td>
-                        <td><span id="loses">0</span></td>
-                        <td><span id="draws">0</span></td>
-                    </tr>
-                </table>
-            </div>
+        </div>
+        <div class="flex-blackjack-row-1">
+            <table id="table-label">
+                <tr>
+                    <th id="win-header">Vitórias</th>
+                    <th id="loss-header">Derrotas</th>
+                    <th id="draw-header">Empates</th>
+                </tr>
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
         </div>
         <div class="flex-blackjack-row-2">
             <div id="your-box">
@@ -40,12 +40,13 @@
         </div>
         <div class="flex-blackjack-row-3">
             <div>
-                <button id="hit-button">Carta</button>
-                <button id="stand-button">Manter</button>
-                <button id="deal-button">Deal</button>
-                <button id="reset-button">Nova partida</button>
+                <button id="blackjack-hit-button">Carta</button>
+                <button id="blackjack-stand-button">Manter</button>
+                <button id="blackjack-deal-button">Deal</button>
+                <button id="blackjack-reset-button">Nova partida</button>
             </div>
         </div>
     </div>
 </body>
+
 </html>
