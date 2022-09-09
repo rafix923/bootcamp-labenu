@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#red-title {
+    color: rgb(223, 47, 47);
+}
+
+body {
+    /* background: url(https://st3.depositphotos.com/1364311/32608/i/450/depositphotos_326083766-stock-photo-green-poker-background.jpg); */
+    /* background: url(https://static4.depositphotos.com/1004032/356/i/450/depositphotos_3569552-stock-photo-poker-table-felt-background.jpg); */
+    background: url(https://st4.depositphotos.com/13324256/23647/i/450/depositphotos_236475616-stock-photo-top-view-empty-green-poker.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin: 60px auto;
+    text-align: center;
+}
+
+.flex-blackjack-row-1,
+.flex-blackjack-row-2,
+.flex-blackjack-row-3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+.flex-blackjack-row-2 {
+    padding: 10px;
+    flex: 1;
+    height: 300px;
+    text-align: center;
+}
+
+.flex-blackjack-row-2 div img {
+    padding: 10px;
+    object-fit: contain;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#table-label {
+    font-size: 1.2rem;
+}
+
+#win-header {
+    color: rgb(122, 247, 122);
+}
+
+#loss-header {
+    color: rgb(252, 56, 56);
+}
+
+#draw-header {
+    color: rgb(251, 168, 67);
+}
+
+table,
+th,
+td {
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 6px;
+    align-items: center;
+    text-align: center;
+}
+
+.flex-blackjack-row-3 div {
+    padding: 10px;
+}
+
+.flex-blackjack-row-3 button {
+    padding: 10px;
+    margin: 0 10px;
+}
+
+button {
+    border-radius: 16px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#hit-button {
+    background: rgb(42, 42, 245);
+    padding: 10px 30px;
+}
+
+#stand-button {
+    padding: 10px 30px;
+    background: orange;
+}
+
+#deal-button {
+    padding: 10px 30px;
+    background: orangered;
+}
+
+#reset-button {
+    padding: 10px 30px;
+    background: rgb(208, 203, 203);
+    color: rgb(2, 23, 22);
+}

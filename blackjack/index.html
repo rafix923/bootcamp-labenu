@@ -12,10 +12,11 @@
 
 <body>
     <div class="container">
-        <h1>BlackJack</h1>
-        <div id="blackjack-result">Bem Vindos ao Jogo
+        <h1>Black<span id="red-title">Jack</span></h1>
+        <div id="blackjack-result">
+            <p>Boas Vindas ao Jogo</p>
             <div class="flex-blackjack-row-1">
-                <table>
+                <table id="table-label">
                     <tr>
                         <th id="win-header">Vitórias</th>
                         <th id="loss-header">Derrotas</th>
@@ -39,10 +40,10 @@
         </div>
         <div class="flex-blackjack-row-3">
             <div>
-                <button id="hit-button">Hit</button>
+                <button id="hit-button">Carta</button>
                 <button id="stand-button">Manter</button>
-                <button id="stand-button">Deal</button>
-                <button id="stand-button">Nova partida</button>
+                <button id="deal-button">Deal</button>
+                <button id="reset-button">Nova partida</button>
             </div>
         </div>
     </div>
