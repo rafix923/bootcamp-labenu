@@ -38,6 +38,7 @@ body {
 .flex-blackjack-row-2 div img {
     padding: 10px;
     object-fit: contain;
+    height: 30vh;
 }
 
 h1 {
