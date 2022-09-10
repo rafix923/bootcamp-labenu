@@ -8,9 +8,11 @@
 }
 
 body {
-    background: url(https://st4.depositphotos.com/13324256/23647/i/450/depositphotos_236475616-stock-photo-top-view-empty-green-poker.jpg);
+    /* background: url(https://st4.depositphotos.com/13324256/23647/i/450/depositphotos_236475616-stock-photo-top-view-empty-green-poker.jpg); */
+    background: rgb(3, 166, 99);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100vw;
 }
 
 .container {
@@ -31,8 +33,10 @@ body {
 .flex-blackjack-row-2 {
     padding: 10px;
     flex: 1;
-    height: 300px;
+    height: 50vh;
+    width: 100vw;
     text-align: center;
+    /* overflow: scroll; */
 }
 
 .flex-blackjack-row-2 div img {
@@ -42,17 +46,18 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.9rem;
     margin-bottom: 10px;
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: bold;
 }
 
 #table-label {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
 }
 
 #win-header {
@@ -86,6 +91,11 @@ td {
     margin: 0 10px;
 }
 
+#player-blackjack-result,
+#dealer-blackjack-result {
+    margin-left: 10px;
+}
+
 button {
     border-radius: 16px;
     border: none;
@@ -114,4 +124,34 @@ button {
     padding: 10px 30px;
     background: rgb(208, 203, 203);
     color: rgb(2, 23, 22);
+}
+
+@media screen and (max-width:700px) {
+
+    .flex-blackjack-row-1 {
+        height: 20px;
+        margin-bottom: 100px;
+    }
+
+    .flex-blackjack-row-2 {
+        padding: 10px;
+        flex: 1;
+        text-align: center;
+    }
+
+    .flex-blackjack-row-2 div img {
+        padding: 10px;
+        object-fit: contain;
+        height: 15vh;
+    }
+
+    .flex-blackjack-row-3, 
+    #deal-button,
+    #hit-button {
+        /* display: flex; */
+        margin: 30px;
+        /* margin: 60px; */
+        /* margin-bottom: 10px; */
+    }
+
 }
