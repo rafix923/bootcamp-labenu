@@ -8,11 +8,7 @@
 }
 
 body {
-    /* background: url(https://st4.depositphotos.com/13324256/23647/i/450/depositphotos_236475616-stock-photo-top-view-empty-green-poker.jpg); */
     background: rgb(3, 166, 99);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
 }
 
 .container {
@@ -33,20 +29,20 @@ body {
 .flex-blackjack-row-2 {
     padding: 10px;
     flex: 1;
-    height: 50vh;
+    height: 45vh;
     width: 100vw;
     text-align: center;
-    /* overflow: scroll; */
 }
 
 .flex-blackjack-row-2 div img {
     padding: 10px;
-    object-fit: contain;
-    height: 30vh;
+    object-fit: fill;
+    width: 10vw;
+    height: 22vh;
 }
 
 h1 {
-    font-size: 3.9rem;
+    font-size: 3.9em;
     margin-bottom: 10px;
 }
 
@@ -126,32 +122,87 @@ button {
     color: rgb(2, 23, 22);
 }
 
-@media screen and (max-width:700px) {
+@media screen and (min-device-width : 1200px) {
+    .flex-blackjack-row-2 div img{
+        padding: 10px;
+        object-fit: contain;
+        width: 15vw;
+        height: 20vh;
+        }
+
+        .flex-blackjack-row-3 button {
+            font-size: 0.8rem;
+            margin-top: 40px;
+        }
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    h1 {
+        font-size: 2.6rem;
+        margin-top: -50px;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
 
     .flex-blackjack-row-1 {
-        height: 20px;
-        margin-bottom: 100px;
+        height: 16px;
+        margin-bottom: 80px;
+    }
+
+    #table-label {
+        font-size: 1.3rem;
     }
 
     .flex-blackjack-row-2 {
         padding: 10px;
         flex: 1;
+        height: 8vh;
+        width: 100vw;
         text-align: center;
     }
 
     .flex-blackjack-row-2 div img {
         padding: 10px;
         object-fit: contain;
-        height: 15vh;
+        width:15vw;
+        height: 100px;
     }
 
-    .flex-blackjack-row-3, 
-    #deal-button,
+    h2 {
+        font-size: 1.2rem;
+
+    }
+
+    .flex-blackjack-row-3 {
+        display: flex;
+        margin-top: 200px;
+    }
+
+    .flex-blackjack-row-3 button {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+
     #hit-button {
-        /* display: flex; */
-        margin: 30px;
-        /* margin: 60px; */
-        /* margin-bottom: 10px; */
+        padding: 10px 45px;
+        font-size: 0.9rem;
+    }
+
+    #stand-button {
+        padding: 10px 42px;
+        font-size: 0.9rem;
+        color: red;
+    }
+
+    #deal-button {
+        padding: 10px 20px;
+    }
+
+    #reset-button {
+        padding: 10px 35px;
     }
 
 }

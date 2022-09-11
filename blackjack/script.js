@@ -1,5 +1,5 @@
-/* Biliboteca para acessar a pontuação, tamanho do card e da caixa. 
-Além de gerar a pontuação final */
+// Biliboteca para acessar a pontuação, tamanho do card e da caixa 
+// Além de gerar a pontuação final 
 
 let blackjackGame = {
     player: {
@@ -28,18 +28,14 @@ let blackjackGame = {
     pressOnce: false,
 }
 
-// VAriáveis
+// Variáveis
 
 const PLAYER = blackjackGame['player'];
 const DEALER = blackjackGame['dealer'];
-
-// Variáveis para renderizar o jogo conforme o tamanho da tela
-
-let windowWidth = window.screen.width;
-let windowHeight = window.screen.height;
 let winner;
 
 // Event listeners para os botões
+
 document.querySelector("#hit-button").addEventListener("click", blackjackHit);
 document.querySelector("#stand-button").addEventListener("click", blackjackStand);
 document.querySelector("#deal-button").addEventListener("click", blackjackDeal);
@@ -67,30 +63,11 @@ function showCard(card, activePlayer) {
     if (activePlayer['score'] <= 21) {
         let cardImage = document.createElement('img');
         cardImage.src = `images/${card}.png`;
-        cardImage.style = `width:${widthSize()}; height:${heightSize()}`;
         document.querySelector(activePlayer['div']).appendChild(cardImage);
     }
 }
 
-function widthSize() {
-    if (windowWidth > 1000) {
-        let newWidthSize = window.screen.width * 0.1;
-        return newWidthSize;
-    } else {
-        return window.screen.width * 0.18;
-    }
-}
-
-function heightSize() {
-    if (windowHeight > 700) {
-        let newHeightSize = window.screen.height * 0.18;
-        return newHeightSize;
-    } else {
-        return window.screen.height * 0.15;
-    }
-}
-
-// Função para gerar pontuação
+// Funções para gerar e atualizar pontuação
 
 function updateScore(card, activePlayer) {
     if (card === 'A') {
