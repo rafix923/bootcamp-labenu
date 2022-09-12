@@ -55,7 +55,8 @@ https://blackjack-8e650.web.app/
 4) Se desejar continuar jogando click no botão 'nova partida';
 5) Para limpar os valores da tabela e começar um novo jogo click no botão 'resetar'.
 
-## Layout para Desktop
+## Layout no Desktop
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/99361183/189690599-72f05fee-5f9e-41d6-870d-b6f8e3b0fe16.gif)
 
 
 ## Feedback
