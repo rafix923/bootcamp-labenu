@@ -45,7 +45,7 @@ Para isso utilizei media queries para que fosse possível utilizá-lo de forma a
 + Será um "bust" se a soma das suas cartas ultrapassar o valor 21. E se a soma das cartas do dealer for 21 ou chegar o mais próximo deste número, o jogo contabilizará como derrota para você.
 ## Como Jogar
 
-1) Click no link abaixo para abrir o jogo no seu navegador;
+1) Click no link a seguir para abrir o jogo no seu navegador:
 https://blackjack-8e650.web.app/
 
 2) Click no botão 'pedir' para chamar uma carta até a soma das faces ser 21 ou próximo deste valor;
