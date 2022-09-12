@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Black<span id="red-title">Jack</span></h1>
+        <div id="blackjack-result">
+            <p>Boas Vindas ao Jogo</p>
+        </div>
+        <div class="flex-blackjack-row-1">
+            <table id="table-label">
+                <tr>
+                    <th id="win-header">Vitórias</th>
+                    <th id="loss-header">Derrotas</th>
+                    <th id="draw-header">Empates</th>
+                </tr>
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+        <div class="flex-blackjack-row-2">
+            <div id="player-box">
+                <h2>Você:<span id="player-blackjack-result">0</span></h2>
+            </div>
+            <div id="dealer-box">
+                <h2>Dealer:<span id="dealer-blackjack-result">0</span></h2>
+            </div>
+        </div>
+        <div class="flex-blackjack-row-3">
+            <div>
+                <button id="hit-button">Pedir</button>
+                <button id="stand-button">Parar</button>
+                <button id="deal-button">Nova partida</button>
+                <button id="reset-button">Resetar</button>
+            </div>
+        </div>
+    </div>
+    <script defer src="script.js"></script>
+</body>
+
+</html>

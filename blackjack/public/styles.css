@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#red-title {
+    color: rgb(223, 47, 47);
+}
+
+body {
+    background: rgb(3, 166, 99);
+}
+
+.container {
+    margin: 60px auto;
+    text-align: center;
+}
+
+.flex-blackjack-row-1,
+.flex-blackjack-row-2,
+.flex-blackjack-row-3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+.flex-blackjack-row-2 {
+    padding: 10px;
+    flex: 1;
+    height: 45vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.flex-blackjack-row-2 div img {
+    padding: 10px;
+    object-fit: fill;
+    width: 10vw;
+    height: 22vh;
+}
+
+h1 {
+    font-size: 3.9em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#table-label {
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+}
+
+#win-header {
+    color: rgb(122, 247, 122);
+}
+
+#loss-header {
+    color: rgb(252, 56, 56);
+}
+
+#draw-header {
+    color: rgb(251, 168, 67);
+}
+
+table,
+th,
+td {
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 6px;
+    align-items: center;
+    text-align: center;
+}
+
+.flex-blackjack-row-3 div {
+    padding: 10px;
+}
+
+.flex-blackjack-row-3 button {
+    padding: 10px;
+    margin: 0 10px;
+}
+
+#player-blackjack-result,
+#dealer-blackjack-result {
+    margin-left: 10px;
+}
+
+button {
+    border-radius: 16px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#hit-button {
+    background: rgb(42, 42, 245);
+    padding: 10px 30px;
+}
+
+#stand-button {
+    padding: 10px 30px;
+    background: orange;
+}
+
+#deal-button {
+    padding: 10px 30px;
+    background: orangered;
+}
+
+#reset-button {
+    padding: 10px 30px;
+    background: rgb(208, 203, 203);
+    color: rgb(2, 23, 22);
+}
+
+@media screen and (min-device-width : 1200px) {
+    .flex-blackjack-row-2 div img{
+        padding: 10px;
+        object-fit: contain;
+        width: 15vw;
+        height: 20vh;
+        }
+
+        .flex-blackjack-row-3 button {
+            font-size: 0.8rem;
+            margin-top: 40px;
+        }
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    h1 {
+        font-size: 2.6rem;
+        margin-top: -50px;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .flex-blackjack-row-1 {
+        height: 16px;
+        margin-bottom: 80px;
+    }
+
+    #table-label {
+        font-size: 1.3rem;
+    }
+
+    .flex-blackjack-row-2 {
+        padding: 10px;
+        flex: 1;
+        height: 8vh;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .flex-blackjack-row-2 div img {
+        padding: 10px;
+        object-fit: contain;
+        width:15vw;
+        height: 100px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+
+    }
+
+    .flex-blackjack-row-3 {
+        display: flex;
+        margin-top: 200px;
+    }
+
+    .flex-blackjack-row-3 button {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+
+    #hit-button {
+        padding: 10px 45px;
+        font-size: 0.9rem;
+    }
+
+    #stand-button {
+        padding: 10px 42px;
+        font-size: 0.9rem;
+        color: red;
+    }
+
+    #deal-button {
+        padding: 10px 20px;
+    }
+
+    #reset-button {
+        padding: 10px 35px;
+    }
+
+}
