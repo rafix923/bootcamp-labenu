@@ -16,7 +16,9 @@ com este jogo. E durante o processo de construção aprendi na prática a como u
 estruturas condicionais, arrays e laços de repetição. 
 
 Aprendi também a utilizar JavaScript para criar mensagens e alterar o tamanho, a cor e o peso da fonte da mensagem a partir de
-estruturas condicionais e escutadores de eventos (Event Listeners).  
+estruturas condicionais e escutadores de eventos (Event Listeners). 
+
+Para fazer o deploy do projeto eu fiz pesquisas e como já havia aprendido hospedar projetos com o surge, decidi dessa vez experimentar o firebase.
 
 Por fim, a minha maior dificuldade foi tornar o jogo responsivo para se adaptar à maioria das telas.
 Para isso utilizei media queries para que fosse possível utilizá-lo de forma agradável em smartphones e tabletes.
