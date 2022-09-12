@@ -1,5 +1,7 @@
 
 # Blackjack
+![image](https://user-images.githubusercontent.com/99361183/189686366-5a88100c-1514-4baf-a5ad-6a6e61e5159e.png)
+
 
 ## Sobre o Projeto
 
@@ -52,6 +54,10 @@ https://blackjack-8e650.web.app/
 3) Quando somar 21 ou próximo deste valor, click no botão 'parar'. Onde estava a mensagem de boas vindas ao jogo, aparecerá a mensagem se você venceu ou houve um empate;
 4) Se desejar continuar jogando click no botão 'nova partida';
 5) Para limpar os valores da tabela e começar um novo jogo click no botão 'resetar'.
+
+## Layout para Desktop
+
+
 ## Feedback
 
 Se você tem algum Feedback, poderá contatar-me pelo linkedin: https://www.linkedin.com/in/rafael-lopes-fullstack-developer/
