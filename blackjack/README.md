@@ -50,7 +50,7 @@ Para isso utilizei media queries para que fosse possível utilizá-lo de forma a
 ## Como Jogar
 
 1) Click no link a seguir para abrir o jogo no seu navegador:
-https://blackjack-8e650.web.app/
+https://blackjackgame-app.web.app/
 
 2) Click no botão 'pedir' para chamar uma carta até a soma das faces ser 21 ou próximo deste valor;
 3) Quando somar 21 ou próximo deste valor, click no botão 'parar'. Onde estava a mensagem de boas vindas ao jogo, aparecerá a mensagem se você venceu ou houve um empate;
