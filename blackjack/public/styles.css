@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    margin: 60px auto;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -36,14 +36,14 @@ body {
 
 .flex-blackjack-row-2 div img {
     padding: 10px;
-    object-fit: fill;
+    object-fit: contain;
     width: 10vw;
     height: 22vh;
 }
 
 h1 {
     font-size: 3.9em;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 p {
@@ -140,7 +140,6 @@ button {
 
     h1 {
         font-size: 2.6rem;
-        margin-top: -50px;
     }
 
     p {
@@ -166,7 +165,7 @@ button {
 
     .flex-blackjack-row-2 div img {
         padding: 10px;
-        object-fit: contain;
+        object-fit: fill;
         width:15vw;
         height: 100px;
     }
