@@ -84,7 +84,6 @@ function updateScore(card, activePlayer) {
 function showScore(activePlayer) {
     if (activePlayer['score'] > 21) {
         document.querySelector(activePlayer['scoreSpan']).textContent = 'Bust!';
-        document.querySelector(activePlayer['scoreSpan']).style.color = 'red';
     } else {
         document.querySelector(activePlayer['scoreSpan']).textContent = activePlayer['score'];
     }
