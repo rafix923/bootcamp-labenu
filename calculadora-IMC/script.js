@@ -3,13 +3,13 @@ const weightInput = document.querySelector(".weight-input");
 const calculateButton = document.querySelector(".calculate");
 const result = document.querySelector(".result");
 const statement = document.querySelector(".statement");
-let height, weight, BMI;
 
 calculateButton.addEventListener("click", () => {
-    height = heightInput.value;
-    weight = weightInput.value;
-    BMI = weight / (height ** 2);
-    result.innerText = BMI;
+    let height = heightInput.value;
+    let weight = weightInput.value;
+    let BMI = weight / (height ** 2);
+    result.innerText = BMI.toFixed(1);
+
 
 
     if (BMI < 18.5) {
@@ -21,8 +21,10 @@ calculateButton.addEventListener("click", () => {
         statement.innerText = "Você está com sobrepeso. Consulte um médico para fechar um melhor diagnóstico.";
     } else if ((BMI > 30) && (BMI < 40)) {
         statement.innerText = "Você está com obesidade. Consulte um médico para fechar um melhor diagnóstico.";
-    } else {
+    } else if (BMI > 40) {
         statement.innerText = "Você está com obesidade grave. Consulte um médico para fechar um melhor diagnóstico.";
+    } else{  
+        window.alert("Por favor, adicione as informações abaixo");
     }
 });
 
