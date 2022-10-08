@@ -19,11 +19,13 @@ calculateButton.addEventListener("click", () => {
         statement.innerText = "Seu IMC está dentro da normalidade.";
     } else if ((BMI > 25) && (BMI < 29.9)) {
         statement.innerText = "Você está com sobrepeso. Consulte um médico para fechar um melhor diagnóstico.";
-    } else if ((BMI > 30) && (BMI < 40)) {
-        statement.innerText = "Você está com obesidade. Consulte um médico para fechar um melhor diagnóstico.";
+    } else if ((BMI > 30) && (BMI < 34.9)) {
+        statement.innerText = "Você está com obesidade grau I. Consulte um médico para fechar um melhor diagnóstico.";
+    } else if ((BMI > 35) && (BMI < 39.9)) {
+        statement.innerText = "Você está com obesidade grau II. Consulte um médico para fechar um melhor diagnóstico.";
     } else if (BMI > 40) {
-        statement.innerText = "Você está com obesidade grave. Consulte um médico para fechar um melhor diagnóstico.";
-    } else{  
+        statement.innerText = "Você está com obesidade grau III. Consulte um médico para fechar um melhor diagnóstico.";
+    }else{  
         window.alert("Por favor, adicione as informações abaixo");
     }
 });
