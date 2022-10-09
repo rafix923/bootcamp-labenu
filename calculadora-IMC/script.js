@@ -11,9 +11,9 @@ function calculateButton() {
     let height = parseFloat(heightInput.value);
     let weight = parseFloat(weightInput.value);
 
-    // Para não cálcular se os inputs estiverem vazios
+    // Para verificar se os números são válidos. Se não forem, fazer nada
     if (isNaN(height) || isNaN(weight)) {
-        return;
+        return window.alert("Por favor, preencha as informações abaixo");
     }
 
     let BMI = weight / (height ** 2);
@@ -33,7 +33,7 @@ function calculateButton() {
     } else if (BMI > 40) {
         statement.innerText = "Você está com obesidade grau III. Consulte um médico para fechar um melhor diagnóstico.";
     } else {
-        window.alert("Por favor, adicione as informações abaixo");
+        return window.alert("Por favor, preencha as informações abaixo");
     }
 };
 
