@@ -11,9 +11,13 @@ function calculateButton() {
     let height = parseFloat(heightInput.value);
     let weight = parseFloat(weightInput.value);
 
-    // Para verificar se os números são válidos. Se não forem, fazer nada
+    // Para verificar se os números são válidos e se os campos forma preenchidos. Se não forem, emitir um alerta.
     if (isNaN(height) || isNaN(weight)) {
-        return window.alert("Por favor, preencha as informações abaixo");
+        return window.alert("Algo deu errado. Por favor, preencha as informações solicitadas");
+    } else if (height === 0) {
+        return window.alert("Por favor, insira um número válido para o campo altura");
+    } else if (weight === 0) {
+        return window.alert("Por favor, insira um número válido para o campo Peso");
     }
 
     let BMI = weight / (height ** 2);
