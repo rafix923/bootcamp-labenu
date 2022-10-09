@@ -8,8 +8,14 @@ document.querySelector(".calculate").addEventListener("click", calculateButton);
 
 function calculateButton() {
 
-    let height = heightInput.value;
-    let weight = weightInput.value;
+    let height = parseFloat(heightInput.value);
+    let weight = parseFloat(weightInput.value);
+
+    // Para não cálcular se os inputs estiverem vazios
+    if (isNaN(height) || isNaN(weight)) {
+        return;
+    }
+
     let BMI = weight / (height ** 2);
     result.innerText = BMI.toFixed(1);
 
