@@ -21,7 +21,7 @@ function calculateButton() {
     }
 
     let BMI = weight / (height ** 2);
-    result.innerText = BMI.toFixed(1);
+    result.innerText = "Resultado: " + BMI.toFixed(1);
 
     if (BMI < 18.5) {
         statement.innerText = "Você está abaixo do peso ideal. Consulte um médico para fechar um melhor diagnóstico.";

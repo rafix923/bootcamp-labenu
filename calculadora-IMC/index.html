@@ -31,14 +31,14 @@
         </div>
         <div id="calculator-container">
            
-            <h2>Calcule o seu IMC</h2>
+            <h2>Gostaria de saber como está o seu IMC?</h2>
             <form action="#">
                 <p>Insira sua altura em metros:</p>
                 <label for="height">Altura:</label>
-                <input type="number" class="height-input" id="height" name="height" required min="1" max="3">
-                <p>Insira o seu peso em kilogramas:</p>
+                <input type="number" class="height-input" id="height" name="height" required min="1" max="3"><span>(m)</span>
+                <p>Insira o seu peso:</p>
                 <label for="weight">Peso:</label>
-                <input type="number" class="weight-input" id="weight" name="weight" required min="1" max="400">
+                <input type="number" class="weight-input" id="weight" name="weight" required min="1" max="400"><span>(kg)</span>
             </form>
             <button class="calculate" type="button">Calcular</button>
             <h3 class="result"></h3>
