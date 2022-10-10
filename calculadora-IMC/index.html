@@ -13,19 +13,43 @@
     <header>
         <h1>Calculadora de Índice de Massa Corporal (IMC)</h1>
     </header>
-    <main class="calculator-container">
-        <h2>Calcule o seu IMC</h2>
-        <form action="#">
-            <p>Insira sua altura em metros:</p>
-            <label for="height">Altura:</label>
-            <input type="number" class="height-input" id="height" name="height" required min="1" max="3">
-            <p>Insira o seu peso em kilogramas:</p>
-            <label for="weight">Peso:</label>
-            <input type="number" class="weight-input" id="weight" name="weight" required min="1" max="400">
-        </form>
-        <button class="calculate" type="button">Calcular</button>
-        <h3 class="result"></h3>
-        <p class="statement"></p>
+    <main>
+        <div class="text">
+            <p>
+                O cálculo do índice de massa corporal é realizado da seguinte maneira:
+            </p>
+            <math display="block" id="form">
+                IMC = peso(kg) / altura(m²)
+            </math>
+            <p>
+                Considera-se um IMC dentro da normalidade quando o resultado está entre 18,5 e 24,9.
+            </p>
+        </div>
+        <div class="calculator-container">
+            <h2>Calcule o seu IMC</h2>
+            <form action="#">
+                <p>Insira sua altura em metros:</p>
+                <label for="height">Altura:</label>
+                <input type="number" class="height-input" id="height" name="height" required min="1" max="3">
+                <p>Insira o seu peso em kilogramas:</p>
+                <label for="weight">Peso:</label>
+                <input type="number" class="weight-input" id="weight" name="weight" required min="1" max="400">
+            </form>
+            <button class="calculate" type="button">Calcular</button>
+            <h3 class="result"></h3>
+            <p class="statement"></p>
+        </div>
+        <div class="text">
+            <p>
+                Esta calculadora foi desenvolvida com intuito de apenas verificar o Índice de Massa Corporal (IMC) a
+                partir das informações de peso e altura do usuário. E não leva em consideração fatores individuais como
+                idade, sexo, massa muscular e
+                densidade óssea.
+            </p>
+            <p>
+                Portanto, é extremamente aconselhável procurar um especialista em saúde.
+            </p>
+        </div>
     </main>
 </body>
 

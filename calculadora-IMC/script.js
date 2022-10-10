@@ -11,7 +11,7 @@ function calculateButton() {
     let height = parseFloat(heightInput.value);
     let weight = parseFloat(weightInput.value);
 
-    // Para verificar se os números são válidos e se os campos forma preenchidos. Se não forem, emitir um alerta.
+    // Para verificar se os números são válidos e se os campos foram preenchidos. Se não, emitir um alerta.
     if (isNaN(height) || isNaN(weight)) {
         return window.alert("Algo deu errado. Por favor, preencha as informações solicitadas");
     } else if (height === 0) {
