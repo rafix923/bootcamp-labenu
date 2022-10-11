@@ -1,4 +1,4 @@
-# Calculadoda de IMC
+# Calculadora de IMC
 
 ![resized-image-Promo](https://user-images.githubusercontent.com/99361183/195163732-fd05fb69-03df-4446-b246-500b2401979f.jpeg)
 
