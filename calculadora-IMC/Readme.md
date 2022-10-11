@@ -1,10 +1,9 @@
 # Calculadoda de IMC
-![image](https://user-images.githubusercontent.com/99361183/189686366-5a88100c-1514-4baf-a5ad-6a6e61e5159e.png)
+![image]()
 
 ## Sobre o Projeto
 
-Este é um projeto de front-end, realizado com o objetivo de criar uma calculadora de Índice de Massa Corporal e fixar os conteúdios estudados:
-operadores, funções e lógica de programação.
+Este é um projeto de front-end que faz parte dos exercícios de fixação de JavaScript, realizado com o objetivo de criar uma calculadora de Índice de Massa Corporal e fixar os conteúdios estudados: operadores, funções e lógica de programação.
 
 ## Lições Aprendidas
 
@@ -25,7 +24,7 @@ Assim, seguindo a sugestão para a minha pergunta, utilizei o método <code>pars
 + CSS3
 + JavaScript
 
-## Como utilizar a calculadora
+## Como rodar o projeto
 
 1) Click no link a seguir para abrir a página web:
 https://blackjackgame-app.web.app/
@@ -35,9 +34,20 @@ https://blackjackgame-app.web.app/
 5) Verifique o resultado e leia a mensagem que interpleta o seu IMC.
 
 ## Layout Desktop
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/99361183/189690599-72f05fee-5f9e-41d6-870d-b6f8e3b0fe16.gif)
+
 
 ## Feedback
 
 Se você tem algum Feedback, poderá contatar-me pelo linkedin: https://www.linkedin.com/in/rafael-lopes-fullstack-developer/
 
+##  🔠Conteúdos
+<!--ts-->
+   * [Sobre o Projeto](#sobre)
+   * [Objetivo do Projeto](#objetivo-do-projeto)
+   * [Lições Aprendidas](#licoes-aprendidas)
+   * [Funcionalidades](#funcionalidades)
+   * [Stack Utilizada](#stack-utilizada)
+   * [Como rodar o projeto](#como-rodar-o-projeto)
+   * [Layout Desktop](#layout-desktop)
+   * [Feedback](#feedback)
+<!--te-->
