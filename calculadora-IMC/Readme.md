@@ -1,5 +1,6 @@
 # Calculadoda de IMC
-![image]()
+
+![resized-image-Promo](https://user-images.githubusercontent.com/99361183/195163732-fd05fb69-03df-4446-b246-500b2401979f.jpeg)
 
 ## Sobre o Projeto
 
@@ -7,9 +8,9 @@ Este é um projeto de front-end que faz parte dos exercícios de fixação de Ja
 
 ## Lições Aprendidas
 
-Na fase de testes do projeto, ao atribui o valor zero para a altura e um valor qualquer para o peso e o resultado retornava um NaN (Não é um número) e Infinity.
-Para entender esses problemas e resolvê-los, pesquisei no site stackoverflow se já havia uma situação similar a essa. Como não achei, deixei uma pergunta no site da versão para língua portuguesa e inglesa. E para minha surpresa em poucos minutos obtive respostas.
-Assim, seguindo a sugestão para a minha pergunta, utilizei o método <code>parseFloat()</code> e <code>isNaN()</code>, para verificar se os valores fornecidos pelo usuário eram números válidos. E crei uma condicional para que se os números não fossem válidos, o botão calcular não fazer nada e aparecer um alert solicitando informações válidas.
+Na fase de testes do projeto, ao atribuir o valor zero para a altura e um valor qualquer para o peso, o resultado retornava um NaN (Não é um número) e um Infinity.
+Para entender esses problemas e resolvê-los, pesquisei no site stackoverflow se havia uma situação similar a esta. Como não achei, deixei uma pergunta no site da versão para língua portuguesa e inglesa. E para minha surpresa em poucos minutos obtive respostas.
+Assim, seguindo a sugestão para resolver o meu problema, utilizei o método <code>parseFloat()</code> e <code>isNaN()</code>, para verificar se os valores fornecidos eram números válidos. E crei uma condicional para que se os números não fossem válidos, o botão calcular fazer nada e aparecer um alert solicitando informações válidas.
 
 ## Funcionalidades
 
@@ -27,7 +28,7 @@ Assim, seguindo a sugestão para a minha pergunta, utilizei o método <code>pars
 ## Como rodar o projeto
 
 1) Click no link a seguir para abrir a página web:
-https://blackjackgame-app.web.app/
+https://calculadora-de-imc-app.web.app/
 2) No bloco azul, 'Gostaria de saber como está o seu IMC?', insira a sua altura em metros no campo 'Altura', separando o valor com vírgula ou ponto.
 3) Insira o seu peso em kg no campo 'Peso'.
 4) Click no botão 'Calcular'. 
@@ -35,6 +36,7 @@ https://blackjackgame-app.web.app/
 
 ## Layout Desktop
 
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/99361183/195159966-9388ff63-d07f-44c5-98b4-b8c737997cf5.gif)
 
 ## Feedback
 
@@ -42,9 +44,8 @@ Se você tem algum Feedback, poderá contatar-me pelo linkedin: https://www.link
 
 ##  🔠Conteúdos
 <!--ts-->
-   * [Sobre o Projeto](#sobre)
-   * [Objetivo do Projeto](#objetivo-do-projeto)
-   * [Lições Aprendidas](#licoes-aprendidas)
+   * [Sobre o Projeto](#sobre-o-projeto)
+   * [Lições Aprendidas](#lições-aprendidas)
    * [Funcionalidades](#funcionalidades)
    * [Stack Utilizada](#stack-utilizada)
    * [Como rodar o projeto](#como-rodar-o-projeto)
