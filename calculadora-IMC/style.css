@@ -77,6 +77,7 @@ footer {
     background-color: #333;
     color: #fff;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    align-items: center;
     font-size: 1.2rem;
     padding: 25px;
     position: absolute;
