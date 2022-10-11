@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#header-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #a2d2ff;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+#header-container header h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 15px 0px;
+    font-family: sans-serif;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 0px auto;
+    font-size: 1.5rem;
+}
+
+#formula {
+    background: #cdb4db;
+    width: fit-content;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+#calculator-container {
+    background-color: #e7eef5;
+    border: 1px solid cornflowerblue;
+    border-radius: 15px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 30vw;
+    margin: 30px auto;
+    padding: 20px;
+    line-height: 4vh;
+}
+
+input {
+    width: 50px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #a2d2ff;
+    margin: 20px;
+    padding: 9px 22px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.3rem;
+    
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 25px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+/* Desktop */
+
+@media screen and (min-device-width : 1200px) {
+
+    #header-container {
+        margin-bottom: 70px;
+    }
+
+    #calculator-container h2 {
+        font-size: 1.1em;
+        margin-bottom: 30px;
+    }
+
+    #calculator-container h3 {
+        font-size: 1.1em;
+        margin: 15px 0;
+    }
+}
+
+/* Mobile */
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    #header-container header h1 {
+        font-size: 1.5em;
+        padding: 10px;
+        margin-bottom: 0;
+    }
+
+    .text {
+        display: flex;
+        font-size: 1.3em;
+        margin-top: 30px;
+        padding: 0 25px;
+    }
+
+    #calculator-container {
+        position: relative;
+        width: 70vw;
+        font-size: 1.3em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        position: static;
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 0;
+        margin-top: 20px;
+        bottom: 0;
+        font-size: 1.2em;
+        font-weight: lighter;
+    }
+}

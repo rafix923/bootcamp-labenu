@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div id="header-container">
+        <header>
+            <h1>Calculadora de Índice de Massa Corporal (IMC)</h1>
+        </header>
+    </div>
+
+    <main>
+        <div class="text">
+            <p>
+                O cálculo do índice de massa corporal é realizado da seguinte maneira:
+            </p>
+            <math display="block" id="formula">
+                IMC = peso(kg) / altura(m²)
+            </math>
+            <p>
+                Considera-se um IMC dentro da normalidade quando o resultado está entre 18,5 e 24,9.
+            </p>
+        </div>
+        <div id="calculator-container">
+            <h2>Gostaria de saber como está o seu IMC?</h2>
+            <form action="#">
+                <p>Insira sua altura em metros:</p>
+                <label for="height">Altura:</label>
+                <input type="number" class="height-input" id="height" name="height" required min="1"
+                    max="3" /><span>(m)</span>
+                <p>Insira o seu peso:</p>
+                <label for="weight">Peso:</label>
+                <input type="number" class="weight-input" id="weight" name="weight" required min="1"
+                    max="400" /><span>(kg)</span>
+            </form>
+            <button class="calculate" type="button">Calcular</button>
+            <h3 class="result"></h3>
+            <p class="statement"></p>
+        </div>
+
+        <div class="text">
+            <p>
+                Esta calculadora foi desenvolvida com intuito de apenas verificar o Índice de Massa Corporal (IMC) a
+                partir das informações de peso e altura do usuário. E não leva em consideração fatores individuais como
+                idade, sexo, massa muscular e densidade óssea. Portanto, é extremamente aconselhável procurar um
+                especialista em saúde.
+    </main>
+    <footer>
+        <p>Copyright&copy; 2022. Site desenvolvido por Rafael Lopes.</p>
+    </footer>
+</body>
+
+</html>
