@@ -3,27 +3,33 @@
     padding: 0;
 }
 
-#header-container {
-    display: flex;
-    background-color: #a2d2ff;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
 }
 
+#header-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #a2d2ff;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
 
 #header-container header h1 {
     text-align: center;
     font-size: 2.3rem;
-    padding: 15px 0;
+    padding: 15px 0px;
 }
 
 .text {
     display: flex;
     flex-direction: column;
     width: 80vw;
-    margin: 0 auto;
+    margin: 0px auto;
     font-size: 1.5rem;
 }
 
@@ -62,12 +68,22 @@ button {
     border-radius: 12px;
     border: none;
     font-size: 1.3rem;
-    
+
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 25px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
 }
 
 /* Desktop */
 
 @media screen and (min-device-width : 1200px) {
+
     #header-container {
         margin-bottom: 70px;
     }
@@ -90,7 +106,7 @@ button {
     #header-container header h1 {
         font-size: 1.5em;
         padding: 10px;
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 
     .text {
@@ -101,6 +117,7 @@ button {
     }
 
     #calculator-container {
+        position: relative;
         width: 70vw;
         font-size: 1.3em;
     }
@@ -109,8 +126,13 @@ button {
         font-size: 1.2em;
         margin-bottom: 20px;
     }
-}
 
-/*  @media screen and (min-device-width : 481px) and (max-device-width : 800px) {
-     tablets 
-    }*/
+    footer {
+        position: static;
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 0;
+        margin-top: 20px;
+        bottom: 0;
+    }
+}
