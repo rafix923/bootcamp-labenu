@@ -7,6 +7,10 @@ html,
 body {
     height: 100%;
     overflow-x: hidden;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 #header-container {
@@ -53,7 +57,7 @@ body {
     align-items: center;
     font-size: 1.5rem;
     width: 30vw;
-    margin: 30px auto;
+    margin: 20px auto;
     padding: 20px;
     line-height: 4vh;
 }
@@ -79,7 +83,7 @@ footer {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     align-items: center;
     font-size: 1.2rem;
-    padding: 25px;
+    padding: 15px;
     position: absolute;
     bottom: 0px;
     width: 100%;
