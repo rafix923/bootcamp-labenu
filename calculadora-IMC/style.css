@@ -39,6 +39,7 @@
     background-color: #e7eef5;
     border: 1px solid cornflowerblue;
     border-radius: 15px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +47,7 @@
     width: 30vw;
     margin: 30px auto;
     padding: 20px;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    line-height: 4vh;
 }
 
 input {
@@ -57,10 +58,11 @@ input {
 button {
     background-color: #a2d2ff;
     margin: 20px;
-    padding: 9px 16px;
+    padding: 9px 22px;
     border-radius: 12px;
     border: none;
     font-size: 1.3rem;
+    
 }
 
 /* Desktop */

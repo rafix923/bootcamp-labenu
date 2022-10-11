@@ -40,6 +40,6 @@ function calculateButton() {
         return window.alert("Por favor, preencha as informações abaixo");
     }
 };
-
+console.log("result.innerText");
 
 
