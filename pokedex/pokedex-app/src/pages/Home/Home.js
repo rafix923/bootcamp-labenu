@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import { BASE_URL } from "../../constants/url";
 import { HomeHeader, PokeCardName } from "./styles";
-import { goToPokedex } from '../../router/coordinator';
-import { goToDetailsPage } from "../../router/coordinator";
+import { goToPokedex } from '../../routes/coordinator';
+import { goToDetailsPage } from "../../routes/coordinator";
 import { useNavigate } from "react-router-dom";
 
 function Home() {

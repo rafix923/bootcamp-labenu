@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { goToHomePage } from '../../router/coordinator';
+import { goToHomePage } from '../../routes/coordinator';
 import { PokedexHeader } from './styles';
 
 
