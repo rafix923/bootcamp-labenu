@@ -1,6 +1,6 @@
 import React from 'react'
 
-function DetailsPage() {
+function PokemonDetailScreen() {
 
   return (
     <div>
@@ -9,4 +9,4 @@ function DetailsPage() {
   )
 }
 
-export default DetailsPage
+export default PokemonDetailScreen;

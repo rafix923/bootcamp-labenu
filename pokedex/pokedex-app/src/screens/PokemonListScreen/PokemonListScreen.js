@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import axios from "axios";
 import { BASE_URL } from "../../constants/url";
 import { HomeHeader, PokeCardName } from "./styles";
-import { goToPokedex } from '../../routes/coordinator';
-import { goToDetailsPage } from "../../routes/coordinator";
+import { goToPokedexScreen } from '../../routes/coordinator';
+import { goToPokemonDetailScreen } from "../../routes/coordinator";
 import { useNavigate } from "react-router-dom";
 
-function Home() {
+function PokemonListScreen() {
   const [pokemons, setPokemons] = useState([]);
 
   const navigate = useNavigate();
@@ -29,7 +29,7 @@ function Home() {
   return (
     <div>
       <HomeHeader>
-        <button onClick={() => goToPokedex(navigate)}>Ver minha POKEDEX</button>
+        <button onClick={() => goToPokedexScreen(navigate)}>Ver minha POKEDEX</button>
         <h1> Home Page PokedeX </h1>
       </HomeHeader>
       {pokemons.map((pokemon) => (
@@ -37,11 +37,11 @@ function Home() {
           {pokemon.name}
 
           <button onClick={() => addToPokedex(pokemon)} >Adicionar</button>
-          <button onClick={() => goToDetailsPage(navigate)}>Detalhes</button>
+          <button onClick={() => goToPokemonDetailScreen(navigate)}>Detalhes</button>
         </PokeCardName>
       ))}
     </div>
   )
 }
 
-export default Home;
+export default PokemonListScreen;
