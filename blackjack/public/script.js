@@ -84,7 +84,6 @@ function updateScore(card, activePlayer) {
 function showScore(activePlayer) {
     if (activePlayer['score'] > 21) {
         document.querySelector(activePlayer['scoreSpan']).textContent = 'Bust!';
-        document.querySelector(activePlayer['scoreSpan']).style.color = 'red';
     } else {
         document.querySelector(activePlayer['scoreSpan']).textContent = activePlayer['score'];
     }
@@ -135,25 +134,25 @@ function showWinner(winner) {
     if (winner === PLAYER) {
         message = "Você Venceu!";
         messageColor = 'blue';
-        messageSize = '42px';
+        messageSize = '1.8rem';
         messageWeight = 'bold';
         document.querySelector('#wins').textContent = blackjackGame['wins'] += 1;
     } else if (winner === DEALER) {
         message = 'Dealer Venceu!';
         messageColor = 'red';
-        messageSize = '42px';
+        messageSize = '1.8rem';
         messageWeight = 'bold';
         document.querySelector('#losses').textContent = blackjackGame['losses'] += 1;
     } else if (winner === 'Draw') {
         message = 'Tivemos um Empate!';
         messageColor = 'yellow';
-        messageSize = '42px';
+        messageSize = '1.8rem';
         messageWeight = 'bold';
         document.querySelector('#draws').textContent = blackjackGame['draws'] += 1;
     } else if (winner === 'None') {
         message = 'Vocês dois tiveram um bust!';
         messageColor = 'orange';
-        messageSize = '42px';
+        messageSize = '1.8rem';
         messageWeight = 'bold';
     }
     document.querySelector('#blackjack-result').textContent = message;
