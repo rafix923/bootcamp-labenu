@@ -3,14 +3,10 @@
     padding: 0;
 }
 
-html,
-body {
-    height: 100%;
-    overflow-x: hidden;
-    height: 100%;
+#page-container {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 #header-container {
@@ -44,7 +40,7 @@ body {
     margin: 20px;
     padding: 10px;
     border-radius: 10px;
-    
+
 }
 
 #calculator-container {
@@ -74,7 +70,7 @@ button {
     border-radius: 12px;
     border: none;
     font-size: 1.3rem;
-    
+
 }
 
 footer {
@@ -93,8 +89,14 @@ footer {
 
 @media screen and (min-device-width : 1200px) {
 
+    #page-container {
+        position: relative;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
     #header-container {
-        margin-bottom: 70px;
+        margin-bottom: 20px;
     }
 
     #calculator-container h2 {
@@ -143,7 +145,46 @@ footer {
         margin-bottom: 0;
         margin-top: 20px;
         bottom: 0;
+        font-size: 0.8em;
+        font-weight: lighter;
+    }
+}
+
+/* Tablets */
+
+@media screen and (min-device-width : 480px) {
+
+    #header-container header h1 {
+        font-size: 1.5em;
+        padding: 10px;
+        margin-bottom: 0;
+    }
+
+    .text {
+        display: flex;
+        font-size: 1.4em;
+        margin-top: 30px;
+        padding: 0 25px;
+    }
+
+    #calculator-container {
+        position: relative;
+        width: 80vw;
+        font-size: 1.3em;
+    }
+
+    h2 {
         font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 0;
+        margin-top: 20px;
+        bottom: 0;
+        font-size: 1em;
         font-weight: lighter;
     }
 }
