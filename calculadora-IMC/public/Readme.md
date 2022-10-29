@@ -2,6 +2,18 @@
 
 ![resized-image-Promo](https://user-images.githubusercontent.com/99361183/195163732-fd05fb69-03df-4446-b246-500b2401979f.jpeg)
 
+
+##  🔠Conteúdos
+<!--ts-->
+   * [Sobre o Projeto](#sobre-o-projeto)
+   * [Lições Aprendidas](#lições-aprendidas)
+   * [Funcionalidades](#funcionalidades)
+   * [Stack Utilizada](#stack-utilizada)
+   * [Como rodar o projeto](#como-rodar-o-projeto)
+   * [Layout Desktop](#layout-desktop)
+   * [Feedback](#feedback)
+<!--te-->
+
 ## Sobre o Projeto
 
 Este é um projeto de front-end que faz parte dos exercícios de fixação de JavaScript, realizado com o objetivo de criar uma calculadora de Índice de Massa Corporal e fixar os conteúdios estudados: operadores, funções e lógica de programação.
@@ -34,6 +46,12 @@ https://calculadora-de-imc-app.web.app/
 4) Click no botão 'Calcular'. 
 5) Verifique o resultado e leia a mensagem que interpleta o seu IMC.
 
+## Layout Mobile
+
+![Screenshot_1](https://user-images.githubusercontent.com/99361183/198828068-dce48706-dc43-4c8c-a767-1e32fd94d978.png)
+
+<hr>
+
 ## Layout Desktop
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/99361183/195159966-9388ff63-d07f-44c5-98b4-b8c737997cf5.gif)
@@ -42,13 +60,3 @@ https://calculadora-de-imc-app.web.app/
 
 Se você tem algum Feedback, poderá contatar-me pelo linkedin: https://www.linkedin.com/in/rafael-lopes-fullstack-developer/
 
-##  🔠Conteúdos
-<!--ts-->
-   * [Sobre o Projeto](#sobre-o-projeto)
-   * [Lições Aprendidas](#lições-aprendidas)
-   * [Funcionalidades](#funcionalidades)
-   * [Stack Utilizada](#stack-utilizada)
-   * [Como rodar o projeto](#como-rodar-o-projeto)
-   * [Layout Desktop](#layout-desktop)
-   * [Feedback](#feedback)
-<!--te-->
