@@ -49,8 +49,9 @@ function PokemonDetailScreen() {
   return (
     <div>
       <Header
+      title={"Detalhes do Pokémon"}
         leftButtonFunction={() => goToPreviousPage(navigate)}
-        showRightButton
+        showRightButton        
       />
       {selectedPokemon && selectedPokemon.sprites && (
         <PokeInfosContainer>

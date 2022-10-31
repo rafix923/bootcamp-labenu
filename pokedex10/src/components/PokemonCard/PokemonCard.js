@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom';
-import { ButtonsContainer, ImgContainer, PokeCardContainer, PokeImg } from '../PokemonCard/styled';
+import { ButtonsContainer, ImgContainer, PokeCardContainer, PokeImg, AddPokemon, PokemonDetails } from '../PokemonCard/styled';
 import { goToPokemonDetail } from '../../routes/coordinator';
 import { GlobalStateContext } from '../../global/GlobalStateContext';
 
@@ -50,10 +50,10 @@ function PokemonCard({ pokemon, isPokedex }) {
                     />
                 </ImgContainer>
                 <ButtonsContainer>
-                    <button onClick={isPokedex ? removeFromPokedex : addToPokedex}>
-                        {isPokedex ? "Remover da Pokedex" : "Adicionar à Pokedex"}
-                    </button>
-                    <button onClick={() => goToPokemonDetail(navigate, pokemon.name)}>Ver detalhes</button>
+                    <AddPokemon onClick={isPokedex ? removeFromPokedex : addToPokedex}>
+                        {isPokedex ? "Remover da Pokédex" : "Adicionar à Pokédex"}
+                    </AddPokemon>
+                    <PokemonDetails onClick={() => goToPokemonDetail(navigate, pokemon.name)}>Ver detalhes</PokemonDetails>
                 </ButtonsContainer>
             </PokeCardContainer>
         </div>
