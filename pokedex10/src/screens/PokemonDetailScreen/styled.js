@@ -19,6 +19,8 @@ export const ImagesContainer = styled.div`
 export const ImgWrapper = styled.img`
   height: 25vh;
   background: ${backgroundCard};
+  border: solid 1px lightgray;
+  border-radius: 12px;
 `;
 
 export const StatsContainer = styled.div`
