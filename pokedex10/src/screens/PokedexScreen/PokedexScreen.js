@@ -14,7 +14,7 @@ function PokedexScreen() {
   return (
     <>
       <Header
-        title={"Pokedex"}
+        title={"Pokédex"}
         leftButtonFunction={() => goToPokemonList(navigate)}
       />
       <PokeListContainer>

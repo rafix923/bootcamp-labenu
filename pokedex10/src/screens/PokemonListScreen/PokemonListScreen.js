@@ -16,7 +16,7 @@ function PokemonListScreen() {
   return (
     <div>
       <Header
-        title={"Lista de Pokemons"}
+        title={"Lista de Pokémons"}
         leftButtonFunction={() => goToPokedex(navigate)}
       />
       <PokeListContainer>

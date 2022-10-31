@@ -11,8 +11,8 @@ function Header({ leftButtonFunction, title, showRightButton }) {
 
   const leftButtonTitle = () => {
     switch (title) {
-      case "Lista de Pokemons":
-        return "Ir para Pokedex";
+      case "Lista de Pokémons":
+        return "Ir para Pokédex";
       case "Pokédex":
         return "Voltar para lista de pokémons";
       default:
@@ -29,7 +29,7 @@ function Header({ leftButtonFunction, title, showRightButton }) {
       {/* Para só mostrar o botão da direita se a condição for verdadeira */}
       {showRightButton && (
         <RightHeaderButton onClick={() => goToPokedex(navigate)}>
-          Ir para pokedex
+          Ir para pokédex
         </RightHeaderButton>
       )}
     </HeaderContainer>
