@@ -3,70 +3,95 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { GlobalStateContext } from '../../global/GlobalStateContext';
 import Header from '../../components/Header/Header'
 import { ImagesContainer, ImgWrapper, MovesContainer, PokeInfosContainer, StatsContainer, TitleContainer, TypeAndMovesContainer, TypesContainer } from './styled';
-import { goToPokemonList } from '../../routes/coordinator';
+import { goToPreviousPage } from '../../routes/coordinator';
+import axios from 'axios';
+import { BASE_URL } from '../../constants/url'
+
 
 
 function PokemonDetailScreen() {
 
   const navigate = useNavigate()
 
+  const goToPreviousPage = () => {
+    navigate(-1)
+  }
+
   //Pegar o pokemon por params (nome do poke na url) 
-  const { name } = useParams()
+  const { name, pokedexScreen } = useParams()
   // Para procurar no GlobalState o pokemon e pegar os dados necessários
-  const { pokemons } = useContext(GlobalStateContext);
+  const { pokemons, pokedex } = useContext(GlobalStateContext);
   // Estado local para guardar o pokemon
-  const [selectedPokemon, setSelectedPokemon] = useState()
+  const [selectedPokemon, setSelectedPokemon] = useState({})
 
   useEffect(() => {
-    const currentPokemon = pokemons.find((item) => {
-      return item.name === name
-    })
-    setSelectedPokemon(currentPokemon)
-  }, [])
+    let current = [];
+    if (pokedexScreen) {
+      current = pokedex.find((item) => {
+        return item.name === name;
+      });
+    } else {
+      current = pokemons.find((item) => {
+        return item.name === name;
+      });
+    }
+
+    if (!current) {
+      axios
+        .get(`${BASE_URL}/pokemon/${name}`)
+        .then((res) => setSelectedPokemon(res.data))
+        .catch((err) => console.log(err.response.message));
+    } else {
+      setSelectedPokemon(current);
+    }
+  }, []);
 
   return (
     <div>
       <Header
-        leftButtonFunction={() => goToPokemonList(navigate)}
-        title={"Detalhes do Pokemon"}
+        leftButtonFunction={() => goToPreviousPage(navigate)}
         showRightButton
       />
-      <PokeInfosContainer>
-        <ImagesContainer>
-          <ImgWrapper src={selectedPokemon && selectedPokemon.sprites.front_default} />
-          <ImgWrapper src={selectedPokemon && selectedPokemon.sprites.back_default} />
-        </ImagesContainer>
-        <StatsContainer>
-          <TitleContainer>Poderes</TitleContainer>
-          {/* Para buscar os poderes do pokemon */}
-          {selectedPokemon && selectedPokemon.stats && selectedPokemon.stats.map((stat) => {
-            return (
-              <p key={stat.stat.name}>
-                <strong>{stat.stat.name}:</strong>
-                {stat.base_stat}
-              </p>
-            )
-          })
-          }
-        </StatsContainer>
-        <TypeAndMovesContainer>
-          <TypesContainer>
-            {selectedPokemon && selectedPokemon.types.map((type) => {
-              return <p key={type.type.name}>{type.type.name}</p>
-            })}
-          </TypesContainer>
-          <MovesContainer>
-            <TitleContainer>Principais Ataques</TitleContainer>
-            {selectedPokemon && selectedPokemon.moves && selectedPokemon.moves.map((move, index) => {
-              return (
-                index < 5 && <p key={move.move.name}>{move.move.name}</p>
-              )
-            })}
-          </MovesContainer>
-        </TypeAndMovesContainer>
-      </PokeInfosContainer>
+      {selectedPokemon && selectedPokemon.sprites && (
+        <PokeInfosContainer>
+          <ImagesContainer>
+            <ImgWrapper src={selectedPokemon.sprites.front_default} />
+            <ImgWrapper src={selectedPokemon.sprites.back_default} />
+          </ImagesContainer>
+          <StatsContainer>
+            <TitleContainer>Poderes</TitleContainer>
+            {/* Para buscar os poderes do pokemon */}
+            {selectedPokemon &&
+              selectedPokemon.stats.map((stat) => {
+                return (
+                  <p key={stat.stat.name}>
+                    <strong>{stat.stat.name}: </strong>
+                    {stat.base_stat}
+                  </p>
+                );
+              })}
+          </StatsContainer>
+          <TypeAndMovesContainer>
+            <TypesContainer>
+              {selectedPokemon &&
+                selectedPokemon.types.map((type) => {
+                  return <p key={type.type.name}>{type.type.name}</p>;
+                })}
+            </TypesContainer>
+            <MovesContainer>
+              <TitleContainer>Principais ataques</TitleContainer>
+              {selectedPokemon &&
+                selectedPokemon.moves.map((move, index) => {
+                  return (
+                    index < 5 && <p key={move.move.name}>{move.move.name}</p>
+                  );
+                })}
+            </MovesContainer>
+          </TypeAndMovesContainer>
+        </PokeInfosContainer>
+      )}
     </div>
-  )
+  );
 }
 
 export default PokemonDetailScreen;
