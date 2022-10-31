@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { mainColor } from "../../constants/colors";
+import { backgroundColor } from "../../constants/colors";
 
 export const HeaderContainer = styled.header`
   height: 8vh;
-  background: ${mainColor};
+  background: ${backgroundColor};
   display: flex;
   align-items: center;
   justify-content: center;

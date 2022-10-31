@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import {backgroundCard} from '../../constants/colors'
+
 
 export const PokeCardContainer = styled.div`
   height: 35vh;
@@ -10,6 +12,7 @@ export const PokeCardContainer = styled.div`
 
 export const ImgContainer = styled.div`
   display: flex;
+  background: ${backgroundCard};
   justify-content: center;
   align-items: center;
 `;
