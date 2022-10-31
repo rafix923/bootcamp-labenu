@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { backgroundColor } from "../../constants/colors";
 
+
 export const HeaderContainer = styled.header`
   height: 8vh;
   background: ${backgroundColor};
@@ -8,7 +9,8 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: center;
   color: white;
-  position: relative;
+  position: relative; 
+  box-shadow: rgb(50 50 50) 2px 1px 5px 0px;
 `;
 
 export const LeftHeaderButton = styled.button`
