@@ -9,7 +9,7 @@
    * [Stack Utilizada](#stack-utilizada)
    * [Deploy](#deploy)
    * [Passos para rodar o projeto localmente](#passos-para-rodar-o-projeto-localmente)
-   * [Feedback](#feedback)
+   * [ Deixe o seu feedback](#deixe-o-seu-feedback)
 <!--te-->
 
 ## Sobre o Projeto
@@ -52,7 +52,7 @@ Entre no diretório do projeto
   cd pokedex
 ```
 
-Instale as dependências necessárias para esse projeto:
+Instale as dependências necessárias para esse projeto
 
 ```bash
   npm i axios
@@ -73,6 +73,10 @@ Inicie o servidor
 ```
 
  --- 
+##  Autores
+  
+- [Rafael Lopes](https://github.com/rafix923)
+- [Guilher Maciosek](https://github.com/glmaciosek) 
 
 ## Deixe o seu feedback
 
