@@ -9,6 +9,7 @@
    * [Stack Utilizada](#stack-utilizada)
    * [Deploy](#deploy)
    * [Passos para rodar o projeto localmente](#passos-para-rodar-o-projeto-localmente)
+   * [Autores](#autores)
    * [ Deixe o seu feedback](#deixe-o-seu-feedback)
 <!--te-->
 
