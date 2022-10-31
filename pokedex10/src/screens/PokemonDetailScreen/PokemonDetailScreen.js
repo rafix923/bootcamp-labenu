@@ -74,6 +74,7 @@ function PokemonDetailScreen() {
           </StatsContainer>
           <TypeAndMovesContainer>
             <TypesContainer>
+            <TitleContainer>Tipo</TitleContainer>
               {selectedPokemon &&
                 selectedPokemon.types.map((type) => {
                   return <p key={type.type.name}>{type.type.name}</p>;
