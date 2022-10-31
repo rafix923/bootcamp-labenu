@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Pokédex
+![tambnail (Personalizado)](https://user-images.githubusercontent.com/99361183/198978859-ef02bcaf-04b9-45d7-88f7-44628acdf779.jpeg)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##  🔠Conteúdos
+<!--ts-->
+   * [Sobre o Projeto](#sobre-o-projeto)
+   * [Lições Aprendidas](#lições-aprendidas)
+   * [Funcionalidades](#funcionalidades)
+   * [Stack Utilizada](#stack-utilizada)
+   * [Deploy](#deploy)
+   * [Passos para rodar o projeto localmente](#passos-para-rodar-o-projeto-localmente)
+   * [Feedback](#feedback)
+<!--te-->
 
-## Available Scripts
+## Sobre o Projeto
 
-In the project directory, you can run:
+Este é um projeto de front-end que faz parte dos projetos de fixação de React.JS, realizado com o objetivo de criar uma Pokédex consumindo a API REST (Interface de Programação de Aplicação) do site pokeapi.co.
 
-### `npm start`
+## Lições Aprendidas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O maior aprendizado foi trabalhar em equipe apesar das diferenças de disponibilidade de tempo entre os integrantes. Foi possível também rever os conceitos de componentes funcionais em React, navegação entre páginas com React Router, estados globais usando Context React, e axios. E para estilização do projeto foi utilizada a biblioteca styled-componentet. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Funcionalidades
 
-### `npm test`
+- [x] Funções de adicionar e remover pokémons da Pokédex
+- [x] Função de ver detalhes do pokémon
+- [x] Renderização condicional do menu e dos botões dos cards de pokémon
+- [x] Rotas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Stack Utilizada
 
-### `npm run build`
++ React JS
++ Styled-Components
++ Axios
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Deploy 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1) [Clique aqui](https://alcoholic-twig.surge.sh) para acessar o deploy do projeto.
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/99361183/198992950-7d7e128f-92d7-4936-acd2-053b010da9fe.gif)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Passos para rodar o projeto localmente
+  
+Clone o projeto via HTTPS
 
-### `npm run eject`
+```bash
+  git clone https://github.com/rafix923/pokedex10.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Entre no diretório do projeto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+  cd pokedex
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Instale as dependências necessárias para esse projeto:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+  npm i axios
+```
 
-## Learn More
+```bash
+  npm i react-router-dom
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+  npm i styled-components
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Inicie o servidor
 
-### Code Splitting
+```bash
+  npm run start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+ --- 
 
-### Analyzing the Bundle Size
+## Deixe o seu feedback
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Se você tem algum Feedback, poderá contatar-me pelo linkedin: https://www.linkedin.com/in/rafael-lopes-fullstack-developer/
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
