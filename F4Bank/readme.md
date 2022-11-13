@@ -9,6 +9,7 @@ Nesse projeto, temos uma ladding page de um banco fictício, aonde foram utiliza
  - Usamos como referencia outras ladding page como:
  - C6bank
  - Nubank
+ - Banco Inter
 
 
 ## Autores
