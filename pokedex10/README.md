@@ -77,7 +77,7 @@ Inicie o servidor
 ##  Autores
   
 - [Rafael Lopes](https://github.com/rafix923)
-- [Guilher Maciosek](https://github.com/glmaciosek) 
+- [Guilherme Maciosek](https://github.com/glmaciosek) 
 
 ## Deixe o seu feedback
 
