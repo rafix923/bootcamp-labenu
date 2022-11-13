@@ -29,7 +29,7 @@ Assim, seguindo a sugestão para resolver o meu problema, utilizei o método <co
 - [x] Campos para o usuário preencher o peso e a altura
 - [x] Botão para calcular o IMC do usuário
 - [x] Alertas caso o usuário não preencha os dados corretos
-- [x] Renderização do IMC em valor numérico e o seu significado após o usuário clicar no botão 'calcular'
+- [x] Renderização do IMC em valor numérico e o seu resultado após o usuário clicar no botão 'calcular'
 
 ## Stack Utilizada
 
@@ -44,7 +44,7 @@ https://calculadora-de-imc-app.web.app/
 2) No bloco azul, 'Gostaria de saber como está o seu IMC?', insira a sua altura em metros no campo 'Altura', separando o valor com vírgula ou ponto.
 3) Insira o seu peso em kg no campo 'Peso'.
 4) Click no botão 'Calcular'. 
-5) Verifique o resultado e leia a mensagem que interpleta o seu IMC.
+5) Verifique o resultado e leia a mensagem sobre o seu IMC.
 
 ## Layout Mobile
 
