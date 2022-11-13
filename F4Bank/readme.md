@@ -14,14 +14,19 @@ Neste primeiro projeto que desenvolvi em equipe o maior aprendizado foi comparti
 - Multiplataforma
 - Os botões saiba mais e lista hamburguer são apenas ilustrativos
 
+## Stack Utilizadas
+
+- HTML5
+- CSS3
+  
+## Deploy
+
+[Clique aqui](https://holistic-loss.surge.sh) para acessar o deploy do projeto. Ou, copie e cole na url do seu nagvegado o link abaixo.
+
+- holistic-loss.surge.sh
+
 ## Autores
 
-- Rafael Ramos de Oliveira Lopes
-- Allef André de Souza Moura
-- Diandrey Cristiano Ecker
-
-
-
-## Link Surge
-
--  holistic-loss.surge.sh
+- [Rafael Ramos de Oliveira Lopes]()
+- [Allef André de Souza Moura]()
+- [Diandrey Cristiano Ecker]()
