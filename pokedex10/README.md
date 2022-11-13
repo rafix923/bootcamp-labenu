@@ -19,7 +19,7 @@ Este é um projeto de front-end que faz parte dos projetos de fixação de React
 
 ## Lições Aprendidas
 
-O maior aprendizado foi trabalhar em equipe apesar das diferenças de disponibilidade de tempo entre os integrantes. Foi possível também rever os conceitos de componentes funcionais em React, navegação entre páginas com React Router, estados globais usando Context React, e axios. E para estilização do projeto foi utilizada a biblioteca styled-componentet. 
+O maior aprendizado foi trabalhar em equipe apesar das diferenças de disponibilidade de tempo entre os integrantes. Foi possível também rever os conceitos de componentes funcionais em React, navegação entre páginas com React Router, estados globais usando Context React, e axios. E para estilização do projeto utilizamos a biblioteca styled-componentet. 
 
 ## Funcionalidades
 
