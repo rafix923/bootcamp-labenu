@@ -6,7 +6,7 @@ O F4Bank é uma landing page desenvolvida em equipe puramente com HTML5 e CSS3 e
 
 ## Lições Aprendidas
 
-Neste primeiro projeto que desenvolvi em equipe o maior aprendizado foi compartilhar habilidades e sermos colaborativos, pois na maioria das vezes codamos juntos, tornado possível que cada um expressasse sua opnião.
+Neste primeiro projeto que desenvolvi em equipe o maior aprendizado foi compartilhar habilidades e sermos colaborativos, pois na maioria das vezes codamos juntos, tornado possível que cada um expressasse a sua opnião.
 
 ## Funcionalidades
 
@@ -25,8 +25,14 @@ Neste primeiro projeto que desenvolvi em equipe o maior aprendizado foi comparti
 
 - holistic-loss.surge.sh
 
+## Layout Mobile
+
+
+## Layout Desktop
+
+
 ## Autores
 
-- [Rafael Ramos de Oliveira Lopes]()
-- [Allef André de Souza Moura]()
-- [Diandrey Cristiano Ecker]()
+- [Allef André de Souza Moura](https://github.com/allefsouza)
+- [Diandrey Cristiano Ecker](https://github.com/diandreyecker)
+- [Rafael Ramos de Oliveira Lopes](https://github.com/rafix923)
