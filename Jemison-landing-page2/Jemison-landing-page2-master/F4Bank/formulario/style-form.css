@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'sans-serif';
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8712d;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 80vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+
+}
+
+.form-image {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.form-image img {
+    border-radius: 50%;
+    width: 31rem;
+}
+
+.form {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
+}
+
+.form-header {
+    display: flex;
+    margin-bottom: 3rem;
+    justify-content: space-between;
+}
+
+.form-header h1::after {
+    display: block;
+    content: '';
+    height: 0.3rem;
+    width: 8rem;
+    background-color: orange;
+    margin: auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.title {
+    display: flex;
+    margin-top: 15.8rem;
+    margin-right: 5rem;
+    font-size: 0.8rem;
+    justify-content: space-between;
+}
+
+.input-group {
+    display: grid;
+    margin-top: 5rem;
+    justify-content: space-between;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+button {
+    width: 50%;
+    border: none;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffa500;
+    font-size: 1rem;
+    color: #1e1e1e;
+    font-weight: 800px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #f3a57e;
+}
+
+#checkbox {
+    margin: 0.5rem;
+}
+
+@media screen and (max-width:670px) {
+    .form-image {
+        display: none;
+    }
+
+    .container {
+        width: 50%;
+        height: 90%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .title {
+        margin-top: 1.8rem;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+
+    .input-group {
+        font-size: 12px;
+        margin-bottom: -90px;
+    }
+}
