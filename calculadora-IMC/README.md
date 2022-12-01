@@ -16,7 +16,7 @@
 
 ## Sobre o Projeto
 
-Este é um projeto de front-end que faz parte dos exercícios de fixação de JavaScript, realizado com o objetivo de criar uma calculadora de Índice de Massa Corporal e fixar os conteúdios estudados: operadores, funções e lógica de programação.
+Este é um projeto de front-end que faz parte dos exercícios de fixação de JavaScript, realizado com o objetivo de criar uma calculadora de Índice de Massa Corporal e fixar os conteúdos estudados: operadores, funções e lógica de programação.
 
 ## Lições Aprendidas
 
